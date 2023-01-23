@@ -1,0 +1,213 @@
+/* outfit-300 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/outfit-v6-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/outfit-v6-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* outfit-600 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/outfit-v6-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/outfit-v6-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* outfit-regular - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/outfit-v6-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/outfit-v6-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+}
+
+body {
+  font-family: "Outfit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d192c;
+}
+
+
+.main__container {
+  margin-top: 152px;
+  background: #15263f;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2.4rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.back__fon {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: #00fff8;
+  transition: 0.3s;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.nft__image-eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.image-wrapper:active .back__fon {
+  opacity: 0.5;
+}
+
+.image-wrapper:active .nft__image-eye {
+  opacity: 1;
+}
+
+.main__title {
+  padding-top: 2.4rem;
+  transition: 0.3s;
+  padding-bottom: 1.6rem;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.main__title:active {
+  color: #00fff8;
+}
+
+.main__desc {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #8bacd9;
+}
+
+.nft-wrapper {
+  display: flex;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.eth__icon {
+  display: flex;
+  padding-right: 110px;
+}
+
+.eth__image {
+  padding-right: 0.65rem;
+}
+
+.eth__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #00fff8;
+}
+
+.clock__icon {
+  display: flex;
+}
+
+.clock__clock {
+  padding-right: 0.9rem;
+}
+
+.clock__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8bacd9;
+}
+
+.hr {
+  padding-top: 2.5rem;
+}
+
+.main-end {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+  padding-bottom: 3.2rem;
+}
+
+.bottom-img {
+  padding-right: 1.6rem;
+}
+
+.bottom__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8bacd9;
+}
+
+.bottom__span {
+  transition: all 0.3s ease-in;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.bottom__span:active {
+  color: #00fff8;
+}
